@@ -1,24 +1,4 @@
-<!--<?php
 
-$conn = mysqli_connect('localhost','root','','contact_db') or die('connection failed');
-
-if(isset($_POST['submit'])){
-
-   $name = mysqli_real_escape_string($conn, $_POST['name']);
-   $email = mysqli_real_escape_string($conn, $_POST['email']);
-   $number = $_POST['number'];
-   $date = $_POST['date'];
-
-   $insert = mysqli_query($conn, "INSERT INTO `contact_form`(name, email, number, date) VALUES('$name','$email','$number','$date')") or die('query failed');
-
-   if($insert){
-      $message[] = 'appointment made successfully!';
-   }else{
-      $message[] = 'appointment failed';
-   }
-
-}
-?> -->
 
 
 <!DOCTYPE html>
@@ -76,39 +56,7 @@ if(isset($_POST['submit'])){
 
 </section>
 
-<!-- home section ends -->
 
-<!-- icons section starts  -->
-<!--
-<section class="icons-container">
-
-    <div class="icons">
-        <i class="fas fa-user-md"></i>
-        <h3>150+</h3>
-        <p>doctors at work</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-users"></i>
-        <h3>1030+</h3>
-        <p>satisfied patients</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-procedures"></i>
-        <h3>490+</h3>
-        <p>bed facility</p>
-    </div>
-
-    <div class="icons">
-        <i class="fas fa-hospital"></i>
-        <h3>70+</h3>
-        <p>available hospitals</p>
-    </div>
-
-</section> -->
-
-<!-- icons section ends -->
 
 <!-- about section starts  -->
 
@@ -165,26 +113,7 @@ if(isset($_POST['submit'])){
             <a href="bmi.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
         </div>
 
-        <div class="box">
-            <i class="fas fa-pills"></i>
-            <h3>medicines</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-procedures"></i>
-            <h3>bed facility</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-heartbeat"></i>
-            <h3>total care</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
-        </div>
+        
 
     </div>
 
